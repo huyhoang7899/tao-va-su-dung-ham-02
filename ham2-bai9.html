@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("Số phần tử muốn nhập vào mảng : ");
+    let mang = [];
+    for (i = 0; i < num; i++) {
+        mang.push(prompt("Nhập mảng : "));
+    }
+    let ham = kiemTra(mang);
+    function kiemTra(mang) {
+        let timKiem = prompt("Nhập phần tử muốn tìm");
+        let a = 0;
+        for (i = 0 ; i < mang.length ; i++ ) {
+            if(mang[i] === timKiem){
+                a = a + 1;
+            }
+        }
+        if(a==0){
+            return -1;
+        }
+        return a
+    }
+    alert(ham)
+</script>
+</body>
+</html>
